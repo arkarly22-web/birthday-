@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday ❤️</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Birthday, My Love 🎂💖</h1>
+    <img src="images/her16.jpg" class="main-img">
+
+    <p class="cute-text">
+      This little website is made only for you 💕
+    </p>
+
+    <div class="buttons">
+      <a href="memories.html">Mummy's cutest moments📸</a>
+      <a href="message.html">A Message 💌</a>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  const playBtn = document.getElementById('playBtn');
+  const song = document.getElementById('birthdaySong');
+
+  playBtn.addEventListener('click', () => {
+    if (song.paused) {
+      song.play();
+      playBtn.textContent = "⏸ Pause My Song";
+    } else {
+      song.pause();
+      playBtn.textContent = "🎵 Play My Song";
+    }
+  });
+</script>
